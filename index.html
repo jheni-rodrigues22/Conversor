@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Conversor Universal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🔄 Conversor Universal</h1>
+
+      <select id="categoria" onchange="carregarUnidades()">
+        <option value="">Selecione a categoria</option>
+        <option value="comprimento">Comprimento</option>
+        <option value="massa">Massa</option>
+        <option value="temperatura">Temperatura</option>
+        <option value="volume">Volume</option>
+        <option value="area">Área</option>
+        <option value="energia">Energia</option>
+        <option value="potencia">Potência</option>
+        <option value="pressao">Pressão</option>
+        <option value="velocidade">Velocidade</option>
+        <option value="dados">Dados</option>
+        <option value="força">Força</option>
+        <option value="angulo">Ângulo</option>
+      </select>
+
+      <select id="origem"></select>
+
+      <button class="swap" onclick="trocarUnidades()" title="Inverter unidades">
+        🔁
+      </button>
+
+      <select id="destino"></select>
+
+      <input
+        type="number"
+        id="valor"
+        placeholder="Digite o valor"
+        inputmode="decimal"
+      />
+
+      <button onclick="converter()">Converter</button>
+
+      <p id="resultado"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
