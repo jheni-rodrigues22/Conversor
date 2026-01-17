@@ -2,6 +2,12 @@
 
 Um **Conversor Universal** desenvolvido com **HTML, CSS e JavaScript puro**, capaz de converter diversas grandezas físicas de forma simples, rápida e responsiva, sem uso de bibliotecas externas.
 
+
+<p align="center">
+  <img src="img/demo.gif" alt="Demonstração do Conversor Universal" width="300">
+</p>
+
+
 ---
 
 ## 📌 Funcionalidades
